@@ -5,7 +5,7 @@
     <listener class-name="testNG.Listeners"/>
   </listeners>
   <test thread-count="5" name="Amazon(failed)">
-    <parameter name="URL" value="https://www.amazon.com/"/>
+    <parameter name="URL1" value="https://www.amazon.com/"/>
     <groups>
       <run>
         <exclude name="compuetrs"/>
@@ -15,7 +15,10 @@
       <class name="testNG.AmazonPractice">
         <methods>
           <include name="logintoHomePage"/>
+          <include name="allmenubutton"/>
           <include name="loginToWelcomePage" invocation-numbers="1"/>
+          <include name="arts"/>
+          <include name="chekWelcomemsg"/>
         </methods>
       </class> <!-- testNG.AmazonPractice -->
     </classes>
