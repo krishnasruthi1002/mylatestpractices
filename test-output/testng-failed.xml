@@ -1,23 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="testNG.Listeners"/>
-  </listeners>
-  <test thread-count="5" name="Amazon(failed)">
-    <parameter name="URL" value="https://www.amazon.com/"/>
-    <groups>
-      <run>
-        <exclude name="compuetrs"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.AmazonPractice">
+      <class name="testNG.ExtendedRepots">
         <methods>
+          <include name="configuration"/>
           <include name="logintoHomePage"/>
-          <include name="loginToWelcomePage" invocation-numbers="1"/>
         </methods>
-      </class> <!-- testNG.AmazonPractice -->
+      </class> <!-- testNG.ExtendedRepots -->
     </classes>
-  </test> <!-- Amazon(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

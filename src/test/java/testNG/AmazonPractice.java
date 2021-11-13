@@ -1,8 +1,12 @@
 package testNG;
 
+import java.io.ObjectInputStream.GetField;
 import java.util.List;
+import org.apache.logging.log4j.*;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,16 +18,19 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import logs.LogsExample;
+
 public class AmazonPractice {
 	WebDriver driver;
 	String name;
-
-	@Parameters({ "URL" })
+	private static Logger log= LogManager.getLogger(LogsExample.class.getName());
+	
+	@Parameters({ "URL1" })
 	@BeforeTest
-	public void logintoHomePage(String urlname) {
+	public void logintoHomePage(String urlname1) {
 		System.setProperty("webdriver.chrome.driver", "D:\\selenium workspace\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.get(urlname);
+		driver.get(urlname1);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -49,6 +56,8 @@ public class AmazonPractice {
 		driver.findElement(By.xpath("//input[@id=\"signInSubmit\"]")).click();
 		String[] values = username.split("reddy");
 		name = values[1];
+		log.info("I wll give info");
+		log.error(getClass());
 
 	}
 
