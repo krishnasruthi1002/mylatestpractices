@@ -63,7 +63,7 @@
           <version>3.0.0-M5</version>
             <configuration>
           <suiteXmlFiles>
-          <!-- this is to give the name of the xml whichto be run -->
+          <!-- this is to give the name of the xml which to be run -->
             <suiteXmlFile>testng.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
