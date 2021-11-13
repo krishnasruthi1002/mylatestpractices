@@ -8,7 +8,7 @@
 </listeners>
 
 	<test thread-count="5" name="Amazon">
-		<parameter name="URL" value="https://www.amazon.com/" />
+		<parameter name="URL1" value="https://www.amazon.com/" />
 		<groups>
 					<run>
 						<exclude name="compuetrs">
@@ -18,6 +18,18 @@
 				</groups>
 		<classes>
 			<class name="testNG.AmazonPractice">
+				
+			</class>
+
+		</classes>
+	</test>
+	
+
+	<test thread-count="5" name="flipkart">
+		<parameter name="URL" value="https://www.flipkart.com/" />
+		
+		<classes>
+			<class name="testNG.FlipkartPractice">
 				
 			</class>
 
