@@ -98,23 +98,6 @@ public class WebTablesSorting {
 			
 			
 	
-//	@Test(dependsOnMethods={"sorting"})
-	public void withstream() {
-	
-	List<WebElement> names=	driver.findElements(By.xpath("//tr/td[1]"));
-	
-	List<String> veg=	names.stream().map(s->s.getText()).collect(Collectors.toList());
-	System.out.println(veg);
-	List<String> sortedlist=	veg.stream().sorted().collect(Collectors.toList());
-	System.out.println(sortedlist);
-	
 
-	
-	
-
-
-	
-	Assert.assertTrue(veg.equals(sortedlist));
-	}
 	
 }
