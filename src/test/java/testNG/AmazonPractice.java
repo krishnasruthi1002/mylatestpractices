@@ -20,7 +20,7 @@ import org.testng.annotations.Test;
 
 import logs.LogsExample;
 
-public class AmazonPractice {
+public class AmazonPractice  {
 	WebDriver driver;
 	String name;
 	private static Logger log= LogManager.getLogger(LogsExample.class.getName());
@@ -37,7 +37,7 @@ public class AmazonPractice {
 
 	}
 
-	@Test(timeOut = 10000, priority = -1)
+	@Test( priority = -1)
 	public void clickonSignInOption() {
 		Actions a = new Actions(driver);
 		WebElement signinbutton = driver.findElement(By.xpath("//a[@id=\"nav-link-accountList\"]"));
@@ -68,6 +68,8 @@ public class AmazonPractice {
 		Object[][] credentials = new Object[2][2];
 		credentials[0][0] = "sruthireddy629@gmail.com";
 		credentials[0][1] = "Ammulu@1002";
+		
+		
 		return credentials;
 	}
 

@@ -16,7 +16,7 @@
         <methods>
           <include name="logintoHomePage"/>
           <include name="allmenubutton"/>
-          <include name="loginToWelcomePage" invocation-numbers="1"/>
+          <include name="loginToWelcomePage"/>
           <include name="arts"/>
           <include name="chekWelcomemsg"/>
         </methods>

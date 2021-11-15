@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.ExtendedRepots">
+      <class name="practice1.WebTablesSorting">
         <methods>
-          <include name="configuration"/>
-          <include name="logintoHomePage"/>
+          <include name="sorting"/>
+          <include name="withstream"/>
         </methods>
-      </class> <!-- testNG.ExtendedRepots -->
+      </class> <!-- practice1.WebTablesSorting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

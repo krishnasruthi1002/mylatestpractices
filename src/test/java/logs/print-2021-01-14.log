@@ -1,0 +1,6 @@
+19:37:00.631 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle cthyperlink0c85type
+19:37:00.651 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle stxstringf179type
+19:37:00.656 [main] TRACE org.apache.xmlbeans.impl.common.XBeanDebug - Resolving type for handle stcelltypebf95type
+16:00:13.385 [main] INFO  logs.LogsExample - I wll give info
+16:00:13.539 [main] ERROR logs.LogsExample - class testNG.AmazonPractice
+16:01:53.683 [main] INFO  logs.LogsExample - I wll give info
